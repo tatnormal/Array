@@ -1,0 +1,18 @@
+<script>
+/*
+Given three integers N (> 2), A, B, create and output an array of N integers such that the first element is equal to A, the second one is equal to B, and each subsequent element is equal to the sum of all previous ones.
+*/
+function Sum(N, A, B)
+{
+var list = [],
+       n = 2;
+list[0] = A;
+list[1] = B;
+list[n] = A + B;
+while (list.length < N) {
+n++;
+list[n] = list[n-1] * 2}
+	return list;
+}
+console.log(Sum(10, 2, 3));
+</script>

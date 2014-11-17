@@ -1,0 +1,19 @@
+<script>
+/*
+An integer N (> 1), the first term A and the common difference D of an arithmetic sequence are given (A and D are real numbers). Create and output an array of N real numbers that are the initial terms of this sequence:
+A,    A + D,    A + 2·D,    A + 3·D,    … .
+*/
+function Arithm(N, A, D)
+{
+var list = [],
+       n = 0,
+       j = 0;
+while (list.length < N) {
+list[n] = A+j*D;
+n++;
+j++; }
+	return list;
+}
+console.log(Arithm(10, 2, 3));
+console.log(Arithm(10, 2, 1));
+</script>

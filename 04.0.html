@@ -1,0 +1,19 @@
+<script>
+/*
+An integer N (> 1), the first term A and the common ratio R of a geometric sequence are given (A and R are real numbers). Create and output an array of N real numbers that are the initial terms of this sequence:
+A,    A·R,    A·R2,    A·R3,    … .
+*/
+function Geom(N, A, R)
+{
+var list = [],
+       n = 0,
+       j = 0;
+while (list.length < N) {
+list[n] = A*Math.pow(R,j);
+n++;
+j++; }
+	return list;
+}
+console.log(Geom(10, 2, 3));
+console.log(Geom(10, 2, 1));
+</script>

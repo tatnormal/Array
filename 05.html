@@ -1,0 +1,19 @@
+<script>
+/*
+Given an integer N (> 2), create and output an array of N integers that are the initial terms of a sequence {FK} of the Fibonacci numbers:
+F1 = 1,        F2 = 1,        FK = FK-2 + FK-1,    K = 3, 4, … .
+*/
+function Fibonacci(N)
+{
+var list = [],
+       n = 1;
+list[0] = 1;
+list[n] = 1;
+while (list.length < N) {
+n++;
+list[n] = list[n-2] + list[n-1];}
+	return list;
+}
+console.log(Fibonacci(10));
+console.log(Fibonacci(12));
+</script>

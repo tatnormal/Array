@@ -1,0 +1,18 @@
+<script>
+/*
+Given an integer N (> 0), create and output an array of N integers that are the first positive integer powers of M;
+*/
+function PipAn(N, M) 
+{
+var list = [],
+       n = 0,
+       i = M;
+while (list.length < N) {
+list[n] = i;
+n++;
+i*=M; }
+	return list;
+}
+console.log(PipAn(10, 2));
+console.log(PipAn(10, 3));
+</script>

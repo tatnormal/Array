@@ -1,0 +1,18 @@
+<script>
+/*
+Given an integer N (> 0), create and output an array of N integers that are the first positive odd numbers: 1, 3, 5, … .
+*/
+function PonAn(N) 
+{
+var list = [],
+	n = 0,
+	i = 1;
+while (list.length < N) {
+list[n] = i ;
+n++;
+i+=2;}
+	return list;
+}
+console.log(PonAn(10));
+console.log(PonAn(20));
+</script>
